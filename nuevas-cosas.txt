@@ -1,0 +1,10 @@
+const [nombre, setNombre] = useState('');
+
+value={nombre}
+onChange=(e)=>setNombre(e.target.value)
+
+
+
+
+() => {} 		Es una funcion flecha
+(e) => {e.}		Es para poner evetos 
