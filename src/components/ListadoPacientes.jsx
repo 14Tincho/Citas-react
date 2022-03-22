@@ -3,17 +3,6 @@ import Paciente from "./Paciente"
 
 const ListadoPacientes = ({pacientes, setPaciente, eliminarPaciente}) => {
 
-  // useEffect(()=>{
-  //   if (Object.keys(paciente).length > 0) {
-  //     setNombre(paciente,nombre)
-  //     setPropietario(paciente,propietario)
-  //     setEmail(paciente,email)
-  //     setFecha(paciente,fecha)
-  //     setSintomas(paciente,sintomas)
-          
-  //   }
-  // }, [pacienteS])
-
   return (
     <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll">
 
@@ -25,7 +14,7 @@ const ListadoPacientes = ({pacientes, setPaciente, eliminarPaciente}) => {
             <span className="text-indigo-600 font-bold">Pacientes y Citas</span>
           </p>
 
-          { pacientes.map( (paciente, index) => (
+          { pacientes.map( (paciente) => (
               <Paciente 
                   key={paciente.id}
                   paciente = {paciente}
